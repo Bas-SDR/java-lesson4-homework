@@ -64,7 +64,5 @@ public abstract class Pokemon {
         this.type = type;
     }
 
-    
-
 
 }

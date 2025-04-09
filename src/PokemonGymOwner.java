@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class PokemonGymOwner extends PokemonTrainer{
+public class PokemonGymOwner extends PokemonTrainer {
 
     private String town;
 
