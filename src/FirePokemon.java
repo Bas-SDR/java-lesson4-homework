@@ -10,13 +10,77 @@ public class FirePokemon extends Pokemon {
         super(name, level, hp, food, sound, type);
     }
 
-    void fireLash(Pokemon name, Pokemon enemy);
+    void fireLash(Pokemon name, Pokemon enemy){
+        System.out.println(name.getName() + " used Fire Lash on " + enemy.getName() );
+        switch (enemy.getType()){
+            case "grass":
+                System.out.println(enemy.getName()  + "loses 40 HP");
+                enemy.setHp(enemy.getHp() - 40);
+            case "water":
+                System.out.println(enemy.getName() + " loses 30 HP");
+                enemy.setHp(enemy.getHp() - 30);
+            case "electric":
+                System.out.println(enemy.getName() + " loses 20 HP");
+                enemy.setHp(enemy.getHp() - 20);
+            default:
+                System.out.println(enemy.getName() + " loses 10 HP");
+                enemy.setHp(enemy.getHp() - 10);
+        }
+    }
 
-    void flameThrower(Pokemon name, Pokemon enemy);
+    void flameThrower(Pokemon name, Pokemon enemy){
+        System.out.println(name.getName() + " used Fire Lash on " + enemy.getName() );
+        switch (enemy.getType()){
+            case "grass":
+                System.out.println(enemy.getName()  + "loses 50 HP");
+                enemy.setHp(enemy.getHp() - 50);
+            case "water":
+                System.out.println(enemy.getName() + " loses 35 HP");
+                enemy.setHp(enemy.getHp() - 35);
+            case "electric":
+                System.out.println(enemy.getName() + " loses 20 HP");
+                enemy.setHp(enemy.getHp() - 20);
+            default:
+                System.out.println(enemy.getName() + " loses 5 HP");
+                enemy.setHp(enemy.getHp() - 5);
+        }
+    }
 
-    void pyroBall(Pokemon name, Pokemon enemy);
+    void pyroBall(Pokemon name, Pokemon enemy){
+        System.out.println(name.getName() + " used Fire Lash on " + enemy.getName() );
+        switch (enemy.getType()){
+            case "grass":
+                System.out.println(enemy.getName()  + "loses 25 HP");
+                enemy.setHp(enemy.getHp() - 25);
+            case "water":
+                System.out.println(enemy.getName() + " loses 20 HP");
+                enemy.setHp(enemy.getHp() - 20);
+            case "electric":
+                System.out.println(enemy.getName() + " loses 15 HP");
+                enemy.setHp(enemy.getHp() - 15);
+            default:
+                System.out.println(enemy.getName() + " loses 10 HP");
+                enemy.setHp(enemy.getHp() - 10);
+        }
+    }
 
-    void inferno(Pokemon name, Pokemon enemy);
+    void inferno(Pokemon name, Pokemon enemy){
+        System.out.println(name.getName() + " used Inferno on " + enemy.getName() );
+        switch (enemy.getType()){
+            case "grass":
+                System.out.println(enemy.getName()  + "loses 60 HP");
+                enemy.setHp(enemy.getHp() - 60);
+            case "water":
+                System.out.println(enemy.getName() + " loses 40 HP");
+                enemy.setHp(enemy.getHp() - 40);
+            case "electric":
+                System.out.println(enemy.getName() + " loses 20 HP");
+                enemy.setHp(enemy.getHp() - 20);
+            default:
+                System.out.println(enemy.getName() + " loses 0 HP");
+                enemy.setHp(enemy.getHp() - 0);
+        }
+    }
 
     List<String> getAttacks() {
         return attacks;

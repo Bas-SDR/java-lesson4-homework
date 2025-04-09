@@ -21,5 +21,7 @@ public class PokemonTrainer {
     public List<Pokemon> getPokemons() {
         return pokemons;
     }
+
+
 }
 
